@@ -4,8 +4,6 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,45.90.28.0,45.90.30.0
 
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/source/gambling.txt,REJECT
-DOMAIN-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/source/threat.txt,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-exceptions-rule.conf,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT
