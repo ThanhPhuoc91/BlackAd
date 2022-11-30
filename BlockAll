@@ -8,7 +8,12 @@ dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,9.9.9.11
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-exceptions-rule.conf,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT
+#RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf,REJECT
+#RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-FB.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/adult/surge-rule.conf,REJECT
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/gambling/surge-rule.conf,REJECT
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/surge-rule.conf,REJECT
 FINAL,DIRECT
 
 [Script]
