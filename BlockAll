@@ -11,14 +11,10 @@ RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/gambling/surge-rule.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/surge-rule.conf,REJECT
-IP-CIDR,0.0.0.0/32,REJECT,no-resolve
 FINAL,DIRECT
 
 [Script]
 youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide),requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.js
-
-[Map Local]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data="https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/tinygif.gif"
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, s.youtube.com, www.youtube.com, www.googleapis.com, graph.nhaccuatui.com, spclient.wg.spotify.com
