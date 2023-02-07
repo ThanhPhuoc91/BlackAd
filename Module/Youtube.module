@@ -1,3 +1,6 @@
+#!name=Block Youtube Ads
+#!desc= Block ads in app Youtube
+
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
 
