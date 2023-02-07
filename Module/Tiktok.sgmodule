@@ -1,0 +1,10 @@
+#!name=Tiktok unlock
+#!desc=Tiktok
+
+[Rule]
+DOMAIN-SUFFIX,tiktok.com,REJECT
+DOMAIN-SUFFIX,bytecdn.cn,REJECT
+
+[MITM]
+hostname = api-t.tiktok.com
+ssl-certificate = certificate.cer
