@@ -1,6 +1,5 @@
-[General]
-bypass-system = true
-bypass-local = true
+#!name=Facebook block
+#!desc=Facebook
 
 [Rule]
 DOMAIN-SUFFIX,facebook.com,REJECT
