@@ -12,8 +12,8 @@
 
     //Resolution Settings
     const MUST_CHANGE_RESOLUTION = true;
-    const RESOLUTION = "hd1080";
-    const AVAILABLE_RESOLUTIONS = ["highres", "hd2880", "hd2160", "hd1440", "hd1080", "hd720", "large", "medium", "small", "tiny"];
+    const RESOLUTION = "1080p";
+    const AVAILABLE_RESOLUTIONS = ["highres", "hd2880", "hd2160", "hd1440", "1080p", "hd720", "large", "medium", "small", "tiny"];
 
     function isAVideo() {
         if (window.location.href.indexOf("/watch") !== -1) {
