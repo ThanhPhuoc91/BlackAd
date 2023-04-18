@@ -9,4 +9,4 @@ reject-img ^https?://[\w-]+\.googlevideo\.com/initplayback.*
 
 [Script]
 youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/ThanhPhuoc91/BlockAd/main/script/youtube.js
-youtuberevo = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/Igor-carvalho/Symfony-scratch/0a43096ac027cbf380869380e6aa59a2bac80ec1/web/bundles/assets/bzplayer/js/resolution.js
+youtuberevo = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/ThanhPhuoc91/BlockAd/main/script/revolution.js
