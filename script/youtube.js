@@ -164,9 +164,8 @@
             if (MUST_CHANGE_VOLUME) {
                 setVolume(player, VOLUME);
             }
-        }
-        
-        //window.removeEventListener("yt-navigate-finish", mainThread, true);
+        }   
+        window.removeEventListener("yt-navigate-finish", mainThread, true);
     }
     function x() {
     }
