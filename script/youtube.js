@@ -12,7 +12,7 @@
 
     //Resolution Settings
     const MUST_CHANGE_RESOLUTION = true;
-    const RESOLUTION = "hd720";
+    const RESOLUTION = "hd1080";
     const AVAILABLE_RESOLUTIONS = ["highres", "hd2880", "hd2160", "hd1440", "hd1080", "hd720", "large", "medium", "small", "tiny"];
 
     function isAVideo() {
