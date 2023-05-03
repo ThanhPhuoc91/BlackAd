@@ -4,15 +4,6 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,9.9.9.11
 
 [Rule]
-DOMAIN-SUFFIX,autolinkmaker.itunes.apple.com,REJECT
-DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
-DOMAIN-SUFFIX,metrics.apple.com,REJECT
-DOMAIN-SUFFIX,searchads.apple.com,REJECT
-DOMAIN-SUFFIX,securemetrics.apple.com,REJECT
-DOMAIN-SUFFIX,securemvt.apple.com,REJECT
-DOMAIN-SUFFIX,supportmetrics.apple.com,REJECT
-DOMAIN-SUFFIX,widgets.itunes.apple.com,REJECT
-DOMAIN-SUFFIX,banners.itunes.apple.com,REJECT
 DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
 DOMAIN-SUFFIX,pixel.facebook.com,REJECT
 DOMAIN-SUFFIX,badge.facebook.com,REJECT
