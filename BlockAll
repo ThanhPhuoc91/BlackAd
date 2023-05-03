@@ -4,30 +4,28 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,9.9.9.11
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list,👤 FACEBOOK
+DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
+DOMAIN-SUFFIX,pixel.facebook.com,REJECT
+DOMAIN-SUFFIX,badge.facebook.com,REJECT
+DOMAIN-SUFFIX,analytics.facebook.com,REJECT
+DOMAIN-KEYWORD,Sponsored,REJECT
+DOMAIN-SUFFIX,m.facebook.com,REJECT
+DOMAIN-SUFFIX,lookaside.facebook.com,REJECT
+DOMAIN-SUFFIX,star-mini.c10r.facebook.com,REJECT
+DOMAIN-SUFFIX,edge-mqtt.facebook.com,REJECT
+DOMAIN-SUFFIX,taobao.com,REJECT
+DOMAIN-SUFFIX,slatic.net,REJECT
+DOMAIN-SUFFIX,alibabadns.com,REJECT
+DOMAIN-SUFFIX,stocks-data-service.apple.com,REJECT
+DOMAIN-SUFFIX,stocks-edge.apple.com,REJECT
+//RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-exceptions-rule.conf,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/gambling/surge-rule.conf,REJECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/surge-rule.conf,REJECT
-IP-CIDR,91.108.4.0/22,PROXY,no-resolve
-IP-CIDR,91.108.8.0/22,PROXY,no-resolve
-IP-CIDR,91.108.12.0/22,PROXY,no-resolve
-IP-CIDR,91.108.16.0/22,PROXY,no-resolve
-IP-CIDR,91.108.56.0/22,PROXY,no-resolve
-IP-CIDR,109.239.140.0/24,PROXY,no-resolve
-IP-CIDR,149.154.160.0/20,PROXY,no-resolve
-IP-CIDR,2001:B28:F23D::/48,PROXY,no-resolve
-IP-CIDR,2001:B28:F23F::/48,PROXY,no-resolve
-IP-CIDR,2001:67C:4E8::/48,PROXY,no-resolve
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
-GEOIP,CN,DIRECT
 FINAL,DIRECT
-FINAL,PROXY
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, s.youtube.com, www.youtube.com, www.googleapis.com, graph.nhaccuatui.com, spclient.wg.spotify.com
