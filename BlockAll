@@ -4,11 +4,19 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10
 dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,9.9.9.11
 
 [Rule]
+DOMAIN-SUFFIX,autolinkmaker.itunes.apple.com,REJECT
+DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
+DOMAIN-SUFFIX,metrics.apple.com,REJECT
+DOMAIN-SUFFIX,searchads.apple.com,REJECT
+DOMAIN-SUFFIX,securemetrics.apple.com,REJECT
+DOMAIN-SUFFIX,securemvt.apple.com,REJECT
+DOMAIN-SUFFIX,supportmetrics.apple.com,REJECT
+DOMAIN-SUFFIX,widgets.itunes.apple.com,REJECT
+DOMAIN-SUFFIX,banners.itunes.apple.com,REJECT
 DOMAIN-SUFFIX,staticxx.facebook.com,REJECT
 DOMAIN-SUFFIX,pixel.facebook.com,REJECT
 DOMAIN-SUFFIX,badge.facebook.com,REJECT
 DOMAIN-SUFFIX,analytics.facebook.com,REJECT
-DOMAIN-KEYWORD,Sponsored,REJECT
 DOMAIN-SUFFIX,m.facebook.com,REJECT
 DOMAIN-SUFFIX,lookaside.facebook.com,REJECT
 DOMAIN-SUFFIX,star-mini.c10r.facebook.com,REJECT
@@ -18,7 +26,7 @@ DOMAIN-SUFFIX,slatic.net,REJECT
 DOMAIN-SUFFIX,alibabadns.com,REJECT
 DOMAIN-SUFFIX,stocks-data-service.apple.com,REJECT
 DOMAIN-SUFFIX,stocks-edge.apple.com,REJECT
-//RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list,PROXY
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-exceptions-rule.conf,DIRECT
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT
