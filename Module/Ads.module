@@ -25,7 +25,6 @@ DOMAIN-SUFFIX,akamai.net,REJECT
 DOMAIN-SUFFIX,akamai.com,REJECT
 DOMAIN-SUFFIX,akamaiedge.net,REJECT
 DOMAIN-SUFFIX,akadns.net,REJECT
-//face ads
 DOMAIN-SUFFIX,apple-dns.net,REJECT
 DOMAIN-SUFFIX,c10r.facebook.com,REJECT
 DOMAIN-SUFFIX,m.facebook.com,REJECT
