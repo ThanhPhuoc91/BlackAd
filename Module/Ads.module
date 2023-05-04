@@ -2,7 +2,6 @@
 #!desc=Ads include
 
 [Rule]
-//tiktok ads
 DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
 DOMAIN-SUFFIX,ttoverseaus.net,REJECT
 DOMAIN-SUFFIX,ecdnx.com,REJECT
