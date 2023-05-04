@@ -2,8 +2,21 @@
 #!desc=Ads include
 
 [Rule]
-DOMAIN-KEYWORD,CNAME,REJECT
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com,REJECT
+DOMAIN-SUFFIX,atomile.com,REJECT
+DOMAIN-SUFFIX,bytetcdn.com,REJECT
+DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
+DOMAIN-SUFFIX,worldfcdn.com,REJECT
+DOMAIN-SUFFIX,wsdvs.com,REJECT
+DOMAIN-SUFFIX,queniuaa.com,REJECT
+DOMAIN-SUFFIX,myqcloud.com,REJECT
+DOMAIN-SUFFIX,c10r.facebook.com,REJECT
+DOMAIN-SUFFIX,byteoversea.net,REJECT
+DOMAIN-SUFFIX,bytecdn-oversea.com,REJECT
 DOMAIN-SUFFIX,snapchat.com,REJECT
 DOMAIN-SUFFIX,rocket-cdn.com,REJECT
 DOMAIN-SUFFIX,cdn77.org,REJECT
 DOMAIN-SUFFIX,akamai.net,REJECT
+DOMAIN-SUFFIX,akamai.com,REJECT
+DOMAIN-SUFFIX,akamaiedge.net,REJECT
+DOMAIN-SUFFIX,akadns.net,REJECT
