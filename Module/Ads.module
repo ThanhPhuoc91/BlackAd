@@ -1,0 +1,9 @@
+#!name=Ads include
+#!desc=Ads include
+
+[Rule]
+DOMAIN-KEYWORD,CNAME,REJECT
+DOMAIN-SUFFIX,snapchat.com,REJECT
+DOMAIN-SUFFIX,rocket-cdn.com,REJECT
+DOMAIN-SUFFIX,cdn77.org,REJECT
+DOMAIN-SUFFIX,akamai.net,REJECT
