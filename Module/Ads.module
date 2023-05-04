@@ -2,6 +2,10 @@
 #!desc=Ads include
 
 [Rule]
+//tiktok ads
+DOMAIN-SUFFIX,ecdnx.com,REJECT
+DOMAIN-SUFFIX,switserve.com,REJECT
+DOMAIN-SUFFIX,fastly.net,REJECT
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com,REJECT
 DOMAIN-SUFFIX,atomile.com,REJECT
 DOMAIN-SUFFIX,bytetcdn.com,REJECT
