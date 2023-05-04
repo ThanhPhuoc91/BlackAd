@@ -6,7 +6,7 @@ hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
 
 
 [URL Rewrite]
-//^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad_HE REJECT-TINYGIF
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad,REJECT-TINYGIF
 //reject-200 ^https?://[\w-]+\.googlevideo\.com/initplayback.*
 //reject-img ^https?://[\w-]+\.googlevideo\.com/initplayback.*
 
