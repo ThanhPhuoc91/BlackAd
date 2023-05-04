@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,worldfcdn.com,REJECT
 DOMAIN-SUFFIX,wsdvs.com,REJECT
 DOMAIN-SUFFIX,queniuaa.com,REJECT
 DOMAIN-SUFFIX,myqcloud.com,REJECT
-DOMAIN-SUFFIX,c10r.facebook.com,REJECT
 DOMAIN-SUFFIX,byteoversea.net,REJECT
 DOMAIN-SUFFIX,bytecdn-oversea.com,REJECT
 DOMAIN-SUFFIX,snapchat.com,REJECT
@@ -24,3 +23,8 @@ DOMAIN-SUFFIX,akamai.net,REJECT
 DOMAIN-SUFFIX,akamai.com,REJECT
 DOMAIN-SUFFIX,akamaiedge.net,REJECT
 DOMAIN-SUFFIX,akadns.net,REJECT
+//face ads
+DOMAIN-SUFFIX,apple-dns.net,REJECT
+DOMAIN-SUFFIX,c10r.facebook.com,REJECT
+DOMAIN-SUFFIX,m.facebook.com,REJECT
+DOMAIN-SUFFIX,content.xx.fbcdn.net,REJECT
