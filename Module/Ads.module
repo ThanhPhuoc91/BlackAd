@@ -2,6 +2,12 @@
 #!desc=Ads include
 
 [Rule]
+DOMAIN-SUFFIX,tiktok.com/whale/,REJECT
+DOMAIN-SUFFIX,tiktok.com/web/report?,REJECT
+DOMAIN-SUFFIX,tiktok.com/v1/list,REJECT
+DOMAIN-SUFFIX,tiktok.com/captcha/report,REJECT
+DOMAIN-SUFFIX,analytics.tiktok.com,REJECT
+DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
 DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
 DOMAIN-SUFFIX,ttoverseaus.net,REJECT
 DOMAIN-SUFFIX,ecdnx.com,REJECT
