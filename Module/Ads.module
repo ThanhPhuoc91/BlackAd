@@ -3,6 +3,8 @@
 
 [Rule]
 //tiktok ads
+DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
+DOMAIN-SUFFIX,ttoverseaus.net,REJECT
 DOMAIN-SUFFIX,ecdnx.com,REJECT
 DOMAIN-SUFFIX,switserve.com,REJECT
 DOMAIN-SUFFIX,fastly.net,REJECT
