@@ -2,43 +2,9 @@
 #!desc=Ads include
 
 [Rule]
-URL-REGEX,^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/,REJECT
-URL-REGEX,^https?:\/\/api\d?\.musical\.ly\/api\/ad\/,REJECT
-URL-REGEX,^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/,REJECT
-URL-REGEX,^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js,REJECT
-DOMAIN-SUFFIX,mcs-va.tiktok.com,REJECT
-DOMAIN-SUFFIX,ibytedtos.com,REJECT
-DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
-DOMAIN-SUFFIX,.ads.tiktok.com,Reject
-DOMAIN-SUFFIX,.mcs-va.tiktok.com,Reject
-DOMAIN-SUFFIX,.mcs-va.tiktokv.com,Reject
-DOMAIN-SUFFIX,.analytics.tiktok.com,REJECT
-DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
-DOMAIN-SUFFIX,ttoverseaus.net,REJECT
-DOMAIN-SUFFIX,ecdnx.com,REJECT
-DOMAIN-SUFFIX,switserve.com,REJECT
-DOMAIN-SUFFIX,fastly.net,REJECT
-DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com,REJECT
-DOMAIN-SUFFIX,atomile.com,REJECT
-DOMAIN-SUFFIX,bytetcdn.com,REJECT
-DOMAIN-SUFFIX,iadsdk.apple.com,REJECT
-DOMAIN-SUFFIX,worldfcdn.com,REJECT
-DOMAIN-SUFFIX,wsdvs.com,REJECT
-DOMAIN-SUFFIX,queniuaa.com,REJECT
-DOMAIN-SUFFIX,myqcloud.com,REJECT
-DOMAIN-SUFFIX,byteoversea.net,REJECT
-DOMAIN-SUFFIX,bytecdn-oversea.com,REJECT
-DOMAIN-SUFFIX,snapchat.com,REJECT
-DOMAIN-SUFFIX,rocket-cdn.com,REJECT
-DOMAIN-SUFFIX,cdn77.org,REJECT
-DOMAIN-SUFFIX,akamai.net,REJECT
-DOMAIN-SUFFIX,akamai.com,REJECT
-DOMAIN-SUFFIX,akamaiedge.net,REJECT
-DOMAIN-SUFFIX,akadns.net,REJECT
-DOMAIN-SUFFIX,apple-dns.net,REJECT
-DOMAIN-SUFFIX,c10r.facebook.com,REJECT
-DOMAIN-SUFFIX,m.facebook.com,REJECT
-DOMAIN-SUFFIX,content.xx.fbcdn.net,REJECT
+DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/elnfnoosm/iOS_network/main/rule/Reject-rule/Reject-rule.list,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/elnfnoosm/iOS_network/main/rule/China-rule/China-rule.list,REJECT
 # > Chan QC HDOBOX
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
