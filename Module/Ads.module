@@ -2,9 +2,17 @@
 #!desc=Ads include
 
 [Rule]
+AND,((DEST-PORT,443), (PROTOCOL,UDP), (RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list)),REJECT-NO-DROP
 DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
 DOMAIN-SET,https://raw.githubusercontent.com/elnfnoosm/iOS_network/main/rule/Reject-rule/Reject-rule.list,REJECT
 DOMAIN-SET,https://raw.githubusercontent.com/elnfnoosm/iOS_network/main/rule/China-rule/China-rule.list,REJECT
 # > Chan QC HDOBOX
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
+
+[URL Rewrite]
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad _ reject-200
+^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ _ REJECT
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ _ REJECT
+^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
+^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js _ REJECT
