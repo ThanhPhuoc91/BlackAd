@@ -2,10 +2,10 @@
 #!desc=Ads include
 
 [Rule]
-DOMAIN-KEYWORD,tiktok.com/whale/,REJECT
-DOMAIN-KEYWORD,tiktok.com/web/report?,REJECT
-DOMAIN-KEYWORD,tiktok.com/v1/list,REJECT
-DOMAIN-KEYWORD,tiktok.com/captcha/report,REJECT
+URL-REGEX,^https?:\/\/tiktok.com\/whale\/,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/tiktok.com\/web\/report\?,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/tiktok.com\/v1\/list,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/tiktok.com\/captcha\/report,REJECT-TINYGIF
 DOMAIN-SUFFIX,analytics.tiktok.com,REJECT
 DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
 DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
