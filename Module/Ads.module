@@ -38,11 +38,5 @@ DOMAIN-SUFFIX,content.xx.fbcdn.net,REJECT
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
 
-[URL Rewrite]
-#^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ _ REJECT
-#^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ _ REJECT
-#^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
-#^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js _ REJECT
-
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, connect.facebook.net, www.facebook.com
