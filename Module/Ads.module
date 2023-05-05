@@ -41,4 +41,4 @@ DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, connect.facebook.net, www.facebook.com, *.musical.ly
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, connect.facebook.net, facebook.com, *.musical.ly, fbcdn.net, fna.fbcdn.net
