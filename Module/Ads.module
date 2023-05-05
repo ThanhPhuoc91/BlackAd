@@ -39,21 +39,21 @@ DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
 
 [URL Rewrite]
-^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ _ REJECT
-^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ _ REJECT
-^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
-^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
-^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ _ REJECT
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ _ REJECT
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ _ REJECT
-^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ _ REJECT
-^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ _ REJECT
-^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log _ REJECT
-^https?:\/\/frontier\.snssdk\.com\/ - reject
-^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
-^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ _ REJECT
-^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ _ REJECT
-^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js _ REJECT
+#^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ _ REJECT
+#^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ _ REJECT
+#^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
+#^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
+#^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/ _ REJECT
+#^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/ _ REJECT
+#^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/ _ REJECT
+#^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/ _ REJECT
+#^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/ _ REJECT
+#^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log _ REJECT
+#^https?:\/\/frontier\.snssdk\.com\/ - reject
+#^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/ _ REJECT
+#^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ _ REJECT
+#^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/ _ REJECT
+#^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js _ REJECT
 
 [MITM]
 hostname = %APPEND% api*.tiktokv.com, *.musical.ly, *.byteoversea.com, lf.snssdk.com, *.snssdk.com, connect.facebook.net, www.facebook.com
