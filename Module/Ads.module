@@ -9,7 +9,10 @@ URL-REGEX,^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js,REJECT
 DOMAIN-SUFFIX,mcs-va.tiktok.com,REJECT
 DOMAIN-SUFFIX,ibytedtos.com,REJECT
 DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
-DOMAIN-SUFFIX,analytics.tiktok.com,REJECT
+DOMAIN-SUFFIX,.ads.tiktok.com,Reject
+DOMAIN-SUFFIX,.mcs-va.tiktok.com,Reject
+DOMAIN-SUFFIX,.mcs-va.tiktokv.com,Reject
+DOMAIN-SUFFIX,.analytics.tiktok.com,REJECT
 DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
 DOMAIN-SUFFIX,ttoverseaus.net,REJECT
 DOMAIN-SUFFIX,ecdnx.com,REJECT
