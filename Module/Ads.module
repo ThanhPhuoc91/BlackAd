@@ -2,10 +2,10 @@
 #!desc=Ads include
 
 [Rule]
-#URL-REGEX,^https?:\/\/tiktok.com\/whale\/,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/tiktok.com\/web\/report\?,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/tiktok.com\/v1\/list,REJECT-TINYGIF
-#URL-REGEX,^https?:\/\/tiktok.com\/captcha\/report,REJECT-TINYGIF
+# URL-REGEX,^https?:\/\/tiktok.com\/whale\/,REJECT-TINYGIF
+# URL-REGEX,^https?:\/\/tiktok.com\/web\/report\?,REJECT-TINYGIF
+# URL-REGEX,^https?:\/\/tiktok.com\/v1\/list,REJECT-TINYGIF
+# URL-REGEX,^https?:\/\/tiktok.com\/captcha\/report,REJECT-TINYGIF
 DOMAIN-SUFFIX,analytics.tiktok.com,REJECT
 DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
 DOMAIN-SUFFIX,v45.tiktokcdn.com,REJECT
@@ -34,7 +34,7 @@ DOMAIN-SUFFIX,apple-dns.net,REJECT
 DOMAIN-SUFFIX,c10r.facebook.com,REJECT
 DOMAIN-SUFFIX,m.facebook.com,REJECT
 DOMAIN-SUFFIX,content.xx.fbcdn.net,REJECT
-# > HDOBOX 去广告
+# > Chan QC HDOBOX
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
 
