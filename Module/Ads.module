@@ -2,10 +2,10 @@
 #!desc=Ads include
 
 [Rule]
-URL-REGEX,^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/api\d?\.musical\.ly\/api\/ad\/,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/,REJECT-TINYGIF
-URL-REGEX,^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/,REJECT
+URL-REGEX,^https?:\/\/api\d?\.musical\.ly\/api\/ad\/,REJECT
+URL-REGEX,^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/,REJECT
+URL-REGEX,^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js,REJECT
 DOMAIN-SUFFIX,mcs-va.tiktok.com,REJECT
 DOMAIN-SUFFIX,ibytedtos.com,REJECT
 DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT
@@ -23,15 +23,15 @@ DOMAIN-SUFFIX,worldfcdn.com,REJECT
 DOMAIN-SUFFIX,wsdvs.com,REJECT
 DOMAIN-SUFFIX,queniuaa.com,REJECT
 DOMAIN-SUFFIX,myqcloud.com,REJECT
-DOMAIN-KEYWORD,byteoversea.net,REJECT
-DOMAIN-KEYWORD,bytecdn-oversea.com,REJECT
+DOMAIN-SUFFIX,byteoversea.net,REJECT
+DOMAIN-SUFFIX,bytecdn-oversea.com,REJECT
 DOMAIN-SUFFIX,snapchat.com,REJECT
 DOMAIN-SUFFIX,rocket-cdn.com,REJECT
 DOMAIN-SUFFIX,cdn77.org,REJECT
-DOMAIN-KEYWORD,akamai.net,REJECT
-DOMAIN-KEYWORD,akamai.com,REJECT
-DOMAIN-KEYWORD,akamaiedge.net,REJECT
-DOMAIN-KEYWORD,akadns.net,REJECT
+DOMAIN-SUFFIX,akamai.net,REJECT
+DOMAIN-SUFFIX,akamai.com,REJECT
+DOMAIN-SUFFIX,akamaiedge.net,REJECT
+DOMAIN-SUFFIX,akadns.net,REJECT
 DOMAIN-SUFFIX,apple-dns.net,REJECT
 DOMAIN-SUFFIX,c10r.facebook.com,REJECT
 DOMAIN-SUFFIX,m.facebook.com,REJECT
