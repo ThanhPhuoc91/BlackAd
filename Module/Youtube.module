@@ -4,11 +4,8 @@
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
 
-
-[URL Rewrite]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad _ REJECT-TINYGIF
-//reject-200 ^https?://[\w-]+\.googlevideo\.com/initplayback.*
-//reject-img ^https?://[\w-]+\.googlevideo\.com/initplayback.*
+[Rule]
+URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad,REJECT-TINYGIF
 
 [Script]
 youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?,requires-body=1,binary-body-mode=1,max-size=3145728,script-path=https://raw.githubusercontent.com/ThanhPhuoc91/BlockAd/main/youtube.js
