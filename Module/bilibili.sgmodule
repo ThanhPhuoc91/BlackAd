@@ -1,9 +1,8 @@
-#!name=脚本合集
+#!name=Bilibili
 #!desc=最后更新时间
 
 [Script]
-# > bilbii 换区、评分
-哔哩画质 = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
+youtube = type=http-response,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,max-size=131072,requires-body=true,binary-mode=true,timeout=10,script-update-interval=0,debug=true,enable=true
 
 [MITM]
-hostname = %APPEND% ap?.bilibili.com, ap?.biliapi.net
+hostname = %APPEND% app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, api.bilibili.com, manga.bilibili.com, grpc.biliapi.net
