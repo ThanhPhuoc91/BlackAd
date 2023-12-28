@@ -1,17 +1,17 @@
 [General]
 bypass-system = true
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-dns-server = https://dns.nextdns.io,8.8.8.8,1.1.1.1,9.9.9.11
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
+tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32
+dns-server = 8.8.8.8,9.9.9.11
+fallback-dns-server = system
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-exceptions-rule.conf,DIRECT
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT-TINYGIF
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-OTA.conf,REJECT-TINYGIF
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-FB.conf,REJECT-TINYGIF
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT-TINYGIF
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/gambling/surge-rule.conf,REJECT-TINYGIF
-RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/surge-rule.conf,REJECT-TINYGIF
-IP-CIDR,0.0.0.0/32,REJECT,no-resolve
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rule.conf,REJECT
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-surge-rewrite.conf,REJECT
+RULE-SET,https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/surge-rule.conf,REJECT
+DOMAIN-SET,https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.tiktok.extended.txt,REJECT-TINYGIF
+DOMAIN-SET,https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/ultimate.txt,REJECT-TINYGIF
 FINAL,DIRECT
 
 [MITM]
